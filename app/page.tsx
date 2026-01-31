@@ -21,20 +21,40 @@ export default function Home() {
     instagram: "https://www.instagram.com/iamrichiejr",
     linkedin: "https://www.linkedin.com/in/richie-achu-jr-5aa8783a9/",
     x: "https://x.com/iamrichiejr?s=21",
-    whatsapp: "https://wa.me/",
+    whatsapp: "https://wa.me/2348121193461?text=Hi%20Richie%2C%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20work%20with%20you.",
   };
 
   // ====== VIDEO PORTFOLIO (5 items) ======
   const videos: VideoItem[] = useMemo(
-    () => [
-      { title: "Short-form Edit — Hook + pacing", isLocal: true, src: "/edit.mp4" },
-      { title: "Tiktok Edit — Sound + Clean Transitions", isLocal: true, src: "/edit1.mp4" },
-      { title: "Color-grade", isLocal: true, src: "/edit2.mp4" },
-      { title: "Youtube Edit - Timeline Breakdown", isLocal: true, src: "/edit3.mp4" },
-      { title: "The art of Video Editing", isLocal: true, src: "/edit4.mp4" },
-    ],
-    []
-  );
+  () => [
+    {
+      title: "Short-form Edit — Hook + pacing",
+      isLocal: false,
+      embedUrl: "https://player.vimeo.com/video/1160439588?title=0&byline=0&portrait=0",
+    },
+    {
+      title: "The art of Video Editing",
+      isLocal: false,
+      embedUrl: "https://player.vimeo.com/video/1160445489?title=0&byline=0&portrait=0",
+    },
+    {
+      title: "Youtube Edit - Timeline Breakdown",
+      isLocal: false,
+      embedUrl: "https://player.vimeo.com/video/1160446069?title=0&byline=0&portrait=0",
+    },
+    {
+      title: "color-grade",
+      isLocal: false,
+      embedUrl: "https://player.vimeo.com/video/1160454900?title=0&byline=0&portrait=0",
+    },
+    {
+      title: "Tiktok Edit — Sound + Clean Transitions",
+      isLocal: false,
+      embedUrl: "https://player.vimeo.com/video/1160457075?title=0&byline=0&portrait=0",
+    },
+  ],
+  []
+);
 
   // ====== REVIEWS (4) ======
   const reviews = useMemo(
