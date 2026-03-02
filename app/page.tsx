@@ -19,9 +19,9 @@ export default function Home() {
   // Put your real links here:
   const socials = {
     instagram: "https://www.instagram.com/iamrichiejr",
-    linkedin: "https://www.linkedin.com/in/richie-achu-jr-5aa8783a9/",
+    tiktok: "https://www.tiktok.com/@iamrichiejr",
     x: "https://x.com/iamrichiejr?s=21",
-    whatsapp: "https://wa.me/2348121193461?text=Hi%20Richie%2C%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20work%20with%20you.",
+    whatsapp: "https:///2348121193461?text=Hi%20Richie%2C%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20work%20with%20you.",
   };
 
   // ====== VIDEO PORTFOLIO (5 items) ======
@@ -32,25 +32,11 @@ export default function Home() {
       isLocal: false,
       embedUrl: "https://player.vimeo.com/video/1160439588?title=0&byline=0&portrait=0",
     },
-    {
-      title: "The art of Video Editing",
-      isLocal: false,
-      embedUrl: "https://player.vimeo.com/video/1160445489?title=0&byline=0&portrait=0",
-    },
-    {
-      title: "Youtube Edit - Timeline Breakdown",
-      isLocal: false,
-      embedUrl: "https://player.vimeo.com/video/1160446069?title=0&byline=0&portrait=0",
-    },
+    
     {
       title: "color-grade",
       isLocal: false,
       embedUrl: "https://player.vimeo.com/video/1160454900?title=0&byline=0&portrait=0",
-    },
-    {
-      title: "Tiktok Edit — Sound + Clean Transitions",
-      isLocal: false,
-      embedUrl: "https://player.vimeo.com/video/1160457075?title=0&byline=0&portrait=0",
     },
   ],
   []
@@ -59,24 +45,9 @@ export default function Home() {
   // ====== REVIEWS (4) ======
   const reviews = useMemo(
     () => [
-      {
-        quote:
-          "A strong eye for both color grading and storytelling. Whether it’s polishing a wedding film or dialing in the look of a commercial project, he brings a clean, cinematic touch that really elevates the final product. Super reliable, detail-oriented, and always open to feedback. I can’t recommend him enough.",
-        name: "Gabriel Vazquez",
-        title: "Gabriel Martin Films",
-      },
-      {
-        quote:
-          "Fast turnaround, tight pacing, and captions that actually match the rhythm of the edit. The final cut looked premium and performed better than our previous videos.",
-        name: "Olayin",
-        title: "Freelance Creative Director",
-      },
-      {
-        quote:
-          "He understood the brief immediately and elevated it with clean transitions, tasteful sound design, and strong storytelling choices. Communication was smooth from start to finish.",
-        name: "Adi Hale",
-        title: "Content Creator",
-      },
+      
+      
+      
       {
         quote:
           "Color work was on point and the audio polish made a huge difference. Super professional, open to revisions, and consistently delivers a final product that feels cinematic.",
@@ -111,7 +82,7 @@ This will include selecting, sequencing, and color grading clips, enhancing raw 
         label: "REVISE",
         body: `The deliverables will be uploaded to Frame.io where time-stamped comments can be added for any requested changes to achieve your vision. The final version will be delivered with a download option.
 
-Two rounds of revisions are included in my rates. Any revisions thereafter will be invoiced at $150/ round.`,
+Two rounds of revisions are included in my rates.`,
       },
     ],
     []
@@ -123,10 +94,8 @@ Two rounds of revisions are included in my rates. Any revisions thereafter will 
   const navItems = useMemo(
     () => [
       { label: "Videos", href: "#videos" },
-      { label: "Rates", href: "#rates" },
       { label: "About", href: "#about" },
-      { label: "Contact", href: "#contact" },
-      { label: "Experience", href: "#experience" },
+      { label: "Contact", href: "#Contact" },
     ],
     []
   );
@@ -226,15 +195,15 @@ Two rounds of revisions are included in my rates. Any revisions thereafter will 
                 </svg>
               }
             />
-            <SocialIcon
-              label="LinkedIn"
-              href={socials.linkedin}
-              icon={
-                <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor">
-                  <path d="M4.98 3.5C3.88 3.5 3 4.39 3 5.5s.88 2 1.98 2h.02C6.1 7.5 7 6.61 7 5.5S6.1 3.5 5 3.5h-.02zM3.5 21h3V9h-3v12zM9 9h2.9v1.64h.04c.4-.76 1.38-1.56 2.84-1.56C18.1 9.08 19.5 11 19.5 14.02V21h-3v-6.16c0-1.47-.03-3.36-2.05-3.36-2.05 0-2.36 1.6-2.36 3.25V21H9V9z" />
-                </svg>
-              }
-            />
+           <SocialIcon
+  label="TikTok"
+  href={socials.tiktok}
+  icon={
+    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor">
+      <path d="M9 3v10.5a3.5 3.5 0 1 1-3-3.465V7.5a6 6 0 1 0 6 6V9.09a8.002 8.002 0 0 0 4 1.16V7.25a4.001 4.001 0 0 1-4-4V3H9z"/>
+    </svg>
+  }
+/>
             <SocialIcon
               label="X"
               href={socials.x}
@@ -271,9 +240,7 @@ Two rounds of revisions are included in my rates. Any revisions thereafter will 
             </h1>
 
             <p className="mt-6 max-w-2xl text-base sm:text-lg leading-relaxed text-neutral-300">
-              I specialize in social media reels, commercials, brand films, weddings, event highlights,
-              music videos and short films, crafting high quality edits that captivate and leave a
-              lasting impression.
+              I help creators turn raw footage into premium high retention content for youtube, instagram and tiktok.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -289,7 +256,7 @@ Two rounds of revisions are included in my rates. Any revisions thereafter will 
                 href="#contact"
                 className="rounded-full px-6 py-3 text-sm font-semibold ring-2 ring-white/20 hover:ring-white/40 transition"
               >
-                Let&apos;s Connect
+               Start a Project
               </a>
             </div>
           </div>
@@ -314,15 +281,7 @@ Two rounds of revisions are included in my rates. Any revisions thereafter will 
           </div>
         </div>
 
-        {/* Stats */}
-        <section className="mt-12">
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <div className="grid gap-6 sm:grid-cols-2">
-              <Stat number="100+" label="videos edited" />
-              <Stat number="50+" label="brands & creators supported" />
-            </div>
-          </div>
-        </section>
+       
 
         {/* Video Portfolio */}
         <section id="videos" className="mt-16">
@@ -330,12 +289,10 @@ Two rounds of revisions are included in my rates. Any revisions thereafter will 
             <h2 className="text-3xl sm:text-4xl font-black tracking-tight">
               Video <span style={{ color: accent }}>Edits</span>
             </h2>
-            <p className="text-sm text-neutral-400">5 selected edits • embedded previews</p>
           </div>
 
           <p className="mt-4 max-w-2xl text-neutral-300 leading-relaxed">
-            A quick selection of my edits — pacing, storytelling, captions, transitions, and clean
-            audio.
+            Here are some recent videos i&apos;ve edited.
           </p>
 
           <div className="mt-10 grid gap-6 md:grid-cols-2">
@@ -365,7 +322,7 @@ Two rounds of revisions are included in my rates. Any revisions thereafter will 
                   <p className="text-sm font-semibold text-neutral-200">{v.title}</p>
                   <div className="flex items-center gap-2 text-xs text-neutral-400">
                     <Play className="h-4 w-4" />
-                    Watch
+                    
                   </div>
                 </div>
               </div>
@@ -377,37 +334,26 @@ Two rounds of revisions are included in my rates. Any revisions thereafter will 
         <section id="rates" className="mt-28">
           <div className="grid gap-12 lg:grid-cols-2">
             <div>
-              <p className="text-sm font-semibold tracking-[0.25em] text-neutral-400">FOR SHORT FORM</p>
+           
 
-              <h3 className="mt-4 text-2xl sm:text-3xl font-black">View Pricelist</h3>
+              
 
               <p className="mt-1 text-sm text-neutral-400">
-                (Two rounds of revisions are included in my rates)
+               
               </p>
 
               <div className="mt-10 space-y-4 text-sm">
-                <RateRow label="15 SEC" value="$20" />
-                <RateRow label="30 SEC" value="$30" />
-                <RateRow label="1 MIN" value="$50" />
-                <RateRow label="90 SEC" value="$80" />
-                <RateRow label="2 MIN" value="$100" />
+                
 
-                <div className="pt-4 font-semibold text-neutral-300">2+ MIN — negotiable</div>
+               
               </div>
             </div>
 
             <div>
-              <p className="text-sm font-semibold tracking-[0.25em] text-neutral-400">INCLUDES</p>
+             
 
               <ul className="mt-8 space-y-3 text-sm text-neutral-300">
-                <li>Clip selection</li>
-                <li>Sequencing & pacing</li>
-                <li>Color grading</li>
-                <li>Raw audio enhancement</li>
-                <li>Copyright-free music</li>
-                <li>Sound design</li>
-                <li>Transitions, effects, and text as needed</li>
-                <li>2 rounds of revisions</li>
+                
               </ul>
             </div>
           </div>
@@ -422,10 +368,10 @@ Two rounds of revisions are included in my rates. Any revisions thereafter will 
               </h2>
 
               <p className="mt-6 max-w-xl text-neutral-300 leading-relaxed">
-                I’m Richie Jr, a Video Creator and multi-faceted creator.
+                I’m Richie Jr, a Video editor and multi-faceted creator.
                 <br />
                 <br />
-                As a post-production professional, I have a passion for transforming raw footage into
+                I have a passion for transforming raw footage into
                 visually compelling and emotionally resonant stories through intuitive pacing,
                 cinematic color grading, and immersive sound design. Are you looking for an
                 experienced, creative video editor? Let’s connect and create something unforgettable.
@@ -469,7 +415,6 @@ Two rounds of revisions are included in my rates. Any revisions thereafter will 
                 <ul className="mt-6 grid grid-cols-2 gap-y-2 text-neutral-200">
                   <li>CapCut</li>
                   <li>Adobe Premiere Pro</li>
-                  <li>After Effects</li>
                   <li>DaVinci Resolve</li>
                   <li>Color Grading</li>
                   <li>Sound Design</li>
@@ -525,25 +470,11 @@ Two rounds of revisions are included in my rates. Any revisions thereafter will 
                     <ul className="mt-4 space-y-2 text-sm text-neutral-200">
                       <li>Musicbed</li>
                       <li>Splice Creator</li>
-                      <li>AcidBites FX</li>
-                      <li>Ableton Live 12</li>
-                      <li>Audio-Technica ATH-M50xBT2 Headphones</li>
-                      <li>Yamaha HS8 Monitors</li>
+                     
                     </ul>
                   </div>
 
-                  {/* COLOR GRADING MONITOR */}
-                  <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-                    <p className="text-sm font-semibold tracking-[0.25em] text-neutral-300">
-                      COLOR GRADING MONITOR
-                    </p>
-                    <ul className="mt-4 space-y-2 text-sm text-neutral-200">
-                      <li>
-                        ASUS ProArt Monitor – 27 in.{" "}
-                        <span className="text-neutral-400">(Color Calibrated)</span>
-                      </li>
-                    </ul>
-                  </div>
+                 
 
                   {/* FILE SHARING */}
                   <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
@@ -551,33 +482,13 @@ Two rounds of revisions are included in my rates. Any revisions thereafter will 
                       FILE SHARING
                     </p>
                     <ul className="mt-4 space-y-2 text-sm text-neutral-200">
-                      <li>Frame</li>
+                     
                       <li>Google Drive — 2 TB</li>
-                      <li>Dropbox — 2 TB</li>
+                     
                     </ul>
                   </div>
 
-                  {/* EXTERNAL STORAGE */}
-                  <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-                    <p className="text-sm font-semibold tracking-[0.25em] text-neutral-300">
-                      EXTERNAL STORAGE
-                    </p>
-                    <ul className="mt-4 space-y-2 text-sm text-neutral-200">
-                      <li>Samsung T7 Shield SSD — 2 TB (3)</li>
-                      <li>Seagate HDD — 8 TB</li>
-                      <li>Seagate HDD — 20 TB</li>
-                    </ul>
-                  </div>
-
-                  {/* INVOICING */}
-                  <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-                    <p className="text-sm font-semibold tracking-[0.25em] text-neutral-300">
-                      INVOICING
-                    </p>
-                    <ul className="mt-4 space-y-2 text-sm text-neutral-200">
-                      <li>Stripe</li>
-                    </ul>
-                  </div>
+                
 
                   {/* PROJECT MANAGEMENT */}
                   <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
@@ -586,7 +497,7 @@ Two rounds of revisions are included in my rates. Any revisions thereafter will 
                     </p>
                     <ul className="mt-4 space-y-2 text-sm text-neutral-200">
                       <li>Google Calendar</li>
-                      <li>Asana</li>
+                    
                     </ul>
                   </div>
                 </div>
@@ -595,14 +506,10 @@ Two rounds of revisions are included in my rates. Any revisions thereafter will 
 
             <div id="experience">
               <h2 className="text-3xl sm:text-4xl font-black tracking-tight">
-                My Work <span style={{ color: accent }}>Experience</span>
+              
               </h2>
 
-              <div className="mt-8 space-y-6">
-                <ExperienceItem role="Video Editor" company="Freelance" type="Contract" period="2021 – Present" />
-                <ExperienceItem role="Content Editor" company="Creators & Brands" type="Project-based" period="2020 – 2021" />
-                <ExperienceItem role="Assistant Editor" company="Studio / Team Projects" type="Part-time" period="2019 – 2020" />
-              </div>
+             
             </div>
           </div>
         </section>
@@ -632,15 +539,15 @@ Two rounds of revisions are included in my rates. Any revisions thereafter will 
                     </svg>
                   }
                 />
-                <SocialCircle
-                  label="LinkedIn"
-                  href={socials.linkedin}
-                  icon={
-                    <svg viewBox="0 0 24 24" className="h-6 w-6" fill="currentColor">
-                      <path d="M4.98 3.5C3.88 3.5 3 4.39 3 5.5s.88 2 1.98 2h.02C6.1 7.5 7 6.61 7 5.5S6.1 3.5 5 3.5h-.02zM3.5 21h3V9h-3v12zM9 9h2.9v1.64h.04c.4-.76 1.38-1.56 2.84-1.56C18.1 9.08 19.5 11 19.5 14.02V21h-3v-6.16c0-1.47-.03-3.36-2.05-3.36-2.05 0-2.36 1.6-2.36 3.25V21H9V9z" />
-                    </svg>
-                  }
-                />
+                <SocialIcon
+  label="TikTok"
+  href={socials.tiktok}
+  icon={
+    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor">
+      <path d="M9 3v10.5a3.5 3.5 0 1 1-3-3.465V7.5a6 6 0 1 0 6 6V9.09a8.002 8.002 0 0 0 4 1.16V7.25a4.001 4.001 0 0 1-4-4V3H9z"/>
+    </svg>
+  }
+/>
                 <SocialCircle
                   label="X"
                   href={socials.x}
@@ -668,7 +575,7 @@ Two rounds of revisions are included in my rates. Any revisions thereafter will 
                 <div>
                   <p className="text-sm font-semibold text-neutral-200">Book a 30-min call</p>
                   <p className="mt-2 text-sm text-neutral-400">
-                    Click below to schedule a session. Opens in a modal.
+                    Click below to schedule a session. 
                   </p>
                 </div>
 
@@ -724,9 +631,8 @@ Two rounds of revisions are included in my rates. Any revisions thereafter will 
           <section id="reviews" className="mt-24 border-t border-white/10 pt-16">
             <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
               <h2 className="text-3xl sm:text-4xl font-black tracking-tight">
-                Client <span style={{ color: accent }}>Reviews</span>
+                Client <span style={{ color: accent }}>Review</span>
               </h2>
-              <p className="text-sm text-neutral-400">4 reviews • real feedback</p>
             </div>
 
             <div className="mt-10 grid gap-6 lg:grid-cols-2">
@@ -761,7 +667,7 @@ Two rounds of revisions are included in my rates. Any revisions thereafter will 
             <div className="font-semibold">
               <span style={{ color: accent }}>R</span>A
             </div>
-            <div>© {new Date().getFullYear()} All rights reserved.</div>
+      
           </footer>
         </section>
       </main>
